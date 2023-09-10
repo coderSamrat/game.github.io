@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Phudu:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+#navBar {
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: space-between;
+  max-height: fit-content;
+}
+.logo {
+  margin: 10px 7px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logo img {
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  margin: 3px 6px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+#Name {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffff;
+}
+#navBar ul {
+  display: flex;
+}
+#navBar::before {
+  content: "";
+  background-image: linear-gradient(
+    270.3deg,
+    rgba(84, 212, 228, 1) 0.2%,
+    rgba(68, 36, 164, 1) 100%
+  );
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 1;
+}
+
+#navBar ul li {
+  list-style: none;
+  font-size: 2rem;
+}
+#navBar ul li a {
+  text-decoration: none;
+  padding: 3px 22px;
+  display: block;
+  border-radius: 20px;
+  color: #ffffff;
+}
+#navBar ul li a:hover {
+  color: rgb(0, 0, 0);
+  background-color: transparent;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: #8bc6ec;
+  background-image: linear-gradient(
+    111.4deg,
+    rgba(7, 7, 9, 1) 6.5%,
+    rgba(27, 24, 113, 1) 93.2%
+  );
+  display: flex;
+  justify-content: space-around;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  width: 40%;
+  height: 66.7vh;
+  background: url(bag1.jpg) no-repeat;
+  top: 0;
+  left: 0;
+  padding: 80px;
+  color: #00ffe5;
+  /* border: 1px solid yellow; */
+  border-radius: 5px;
+  margin: 50px 0 0 40px;
+  /* box-shadow: 5px 5px 2px rgb(255, 255, 0),-5px 5px 2px rgb(255, 255, 0), -5px -5px 2px rgb(255, 255, 0), 5px -5px 2px rgb(255, 255, 0); */
+  text-align: start;
+}
+
+.text-sci h2 {
+  font-size: 40px;
+  line-height: 1;
+  
+}
+
+.text-sci h2 span {
+  font-size: 25px;
+  margin: 50px 0;
+}
+
+.text-sci p {
+  font-size: 16px;
+  margin: 50px 0 20px 0;
+}
+
+.sociel-link a i {
+  font-size: 30px;
+  color: #dfdee7;
+  margin-right: 10px;
+  transition: 0.5s;
+}
+
+.sociel-link a:hover i {
+  color: rgba(0, 106, 255, 0.71);
+  transform: scale(1.2);
+}
+
+.container .box {
+  border: none;
+  outline: none;
+  width: 800px;
+  height: 500px;
+  margin: 50px;
+  background-image: radial-gradient(
+    circle 975px at 2.6% 48.3%,
+    rgba(0, 8, 120, 1) 0%,
+    rgba(95, 184, 224, 1) 99.7%
+  );
+  border-radius: 5px;
+  /* box-shadow: 5px 5px 5px rgb(0, 0, 255),-5px 5px 5px rgb(0, 0, 255), -5px -5px 5px rgb(0, 0, 255), 5px -5px 5px rgb(0, 0, 255); */
+}
+
+.container .box .header {
+  margin: 0 0 40px 0;
+  background-image: linear-gradient(to top, #f43b47 0%, #453a94 100%);
+  color: azure;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: context-menu;
+  caret-color: green;
+}
+
+.button .button-img {
+  display: flex;
+  justify-content: space-around;
+}
+
+.box .btn {
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.btn img {
+  width: 200px;
+  height: 200px;
+  border: none;
+  outline: none;
+  /* border-radius: 50%; */
+}
+
+#reset {
+  width: 180px;
+  height: 60px;
+  background-image: url(bg1.jpg);
+  position: relative;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  z-index: 1;
+  overflow: hidden;
+  transition: 1s;
+  margin-top: 10px;
+}
+
+#reset:active {
+  text-decoration:solid;
+  transform: scale(0.9);
+}
+.para {
+  margin: 20px 0 0 0;
+  font-size: 20px;
+  color: aliceblue;
+}
+
+.js-result {
+  margin-bottom: 5px;
+}
+
+.js-moves {
+  margin-bottom: 5px;
+}
+
+.js-score {
+  margin-bottom: 10px;
+}
+
+.box .btn:active {
+  transform: scale(0.9);
+}
+
+.button-img #image1{
+  border-radius: 100%;
+}
+.button-img #image2{
+  border-radius: 100%;
+}
+.button-img #image3{
+  border-radius: 100%;
+}
