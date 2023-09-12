@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
+
 <body>
     <nav id="navBar">
         <div class="logo">
@@ -75,8 +77,8 @@
                     " id="image3"><img src="scissors.png"></button>
                     </div>
                     <div class="para">
-                        <p class="js-result"></p>
                         <p class="js-moves"></p>
+                        <p class="js-result"></p>
                         <p class="js-score"></p>
                     </div>
                     <button class="btn" onclick="
@@ -89,6 +91,7 @@
                     document.querySelector('.js-moves').innerHTML = ``;
                     document.querySelector('.js-moves').innerHTML = `Score is Reset.`;
                   " id="reset">Reset Score</button>
+                  <button onclick="auto_Play()" id="auto_Play">Auto Play</button>
                 </div>
             </div>
         </div>
@@ -101,6 +104,21 @@
         };
 
         updateScoreElement();
+
+        let isplay = false;
+        let intervalID;
+        function auto_Play() {
+            if (!isplay) {
+                intervalID = setInterval(function () {
+                    const playerMove = pickComputerMove();
+                    playGame(playerMove);
+                }, 1000);
+                isplay = true;
+            } else {
+                clearInterval(intervalID);
+                isplay = false;
+            }
+        }
 
         function playGame(playerMove) {
             const computerMove = pickComputerMove();

@@ -170,7 +170,7 @@
   /* border-radius: 50%; */
 }
 
-#reset {
+#reset,#auto_Play {
   width: 180px;
   height: 60px;
   background-image: url(bg1.jpg);
@@ -188,7 +188,7 @@
   margin-top: 10px;
 }
 
-#reset:active {
+#reset,#auto_Play:active {
   text-decoration:solid;
   transform: scale(0.9);
 }
