@@ -1,83 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="style1.css">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+      <link rel="stylesheet" href="style1.css">
 </head>
 <body>
-    <header class="header">
-        <nav class="navbar">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Contuct Us</a>
-        </nav>
-        <form action="#" class="searchbar">
-            <input type="text" placeholder="Search">
-            <button type="submit"><i class='bx bx-search'></i></button>
-        </form>
-    </header>
-    <div class="background"></div>
-    <div class="container">
-        <div class="content">
-            <div id="logo">
-                <img src="logo.jpg">
-                <h2 class="logo">Samyanka</h2>
+      <header class="header">
+            <nav class="navbar">
+                  <a href="#">Home</a>
+                  <a href="#">About</a>
+                  <a href="#">Services</a>
+                  <a href="#">Contuct Us</a>
+            </nav>
+            <form action="#" class="searchbar">
+                  <input type="text" placeholder="Search">
+                  <button type="submit"><i class='bx bx-search'></i></button>
+            </form>
+      </header>
+      <div class="background"></div>
+      <div class="container">
+            <div class="content">
+                  <div id="logo">
+                        <img src="logo.jpg">
+                        <h2 class="logo">Samyanka</h2>
+                  </div>
+                  <div class="text-sci">
+                        <h2>Welcome!<br /><span>To My New WebSite</span></h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id, cumque.</p>
+                        <div class="sociel-link">
+                              <a href="https://www.facebook.com/coderSamrat">
+                                    <i class='bx bxl-facebook'></i>
+                              </a>
+                              <a href="https://www.linkedin.com/in/samrat-mallick-a3bba6276/">
+                                    <i class='bx bxl-linkedin'></i>
+                              </a>
+                              <a href="https://www.instagram.com/codersamrat/">
+                                    <i class='bx bxl-instagram'></i>
+                              </a>
+                              <a href="https://twitter.com/SamratMallick90">
+                                    <i class='bx bxl-twitter'></i>
+                              </a>
+                        </div>
+                  </div>
             </div>
-            <div class="text-sci">
-                <h2>Welcome!<br/><span>To My New WebSite</span></h2>
+            <div class="logreg-link">
+                  <div class="form-box login">
+                        <form onsubmit="func()" action=javascript:script.func() method="post">
+                              <h2>Sign Up</h2>
+                              <div class="input-box">
+                                    <span class="icon"><i class='bx bxs-user'></i></span>
+                                    <input type="text" required id="text">
+                                    <label>Username</label>
+                              </div>
+                              <div class="input-box">
+                                    <span class="icon"><i class='bx bxs-envelope'></i></span>
+                                    <input type="email" required id="email">
+                                    <label>Email address</label>
+                              </div>
+                              <div class="input-box">
+                                    <span class="icon"><i class='bx bxs-lock-alt'></i></span>
+                                    <input type="password" required id="password">
+                                    <label>Password</label>
+                              </div>
 
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id, cumque.</p>
-
-                <div class="sociel-link">
-                    <a href="https://www.facebook.com/profile.php?id=100067534113408"><i class='bx bxl-facebook'></i></a>
-
-                    <a href="https://www.linkedin.com/in/samrat-mallick-a3bba6276/"><i class='bx bxl-linkedin'></i></a>
-
-                    <a href="https://www.instagram.com/prirat_18/"><i class='bx bxl-instagram'></i></a>
-
-                    <a href="https://twitter.com/SamratMallick90"><i class='bx bxl-twitter'></i></a>
-                </div>
+                              <div class="remember-forgote">
+                                    <label>
+                                          <input type="checkbox" id="checkbox">I agree to the turms & condition
+                                    </label>
+                              </div>
+                              <center>
+                                    <button type="submit" class="btn" id="signupBtn">Sign Up</button>
+                              </center>
+                              <div class="login-register">
+                                    <p>Already have an account? <a href="../index.html" class="login-link"
+                                                id="signinBtn">Sign In</a></p>
+                              </div>
+                        </form>
+                  </div>
             </div>
-        </div>
-        <div class="logreg-link">
-            <div class="form-box login">
-                <form onsubmit="func()" action=javascript:script.func() method="post">
-                    <h2>Sign Up</h2>
-                    <div class="input-box">
-                        <span class="icon"><i class='bx bxs-user'></i></span>
-                        <input type="text" required id="text">
-                        <label>Username</label>
-                    </div>
-                    <div class="input-box">
-                        <span class="icon"><i class='bx bxs-envelope'></i></span>
-                        <input type="email" required id="email">
-                        <label>Email address</label>
-                    </div>
-                    <div class="input-box">
-                        <span class="icon"><i class='bx bxs-lock-alt' ></i></span>
-                        <input type="password" required id="password">
-                        <label>Password</label>
-                    </div>
-
-                    <div class="remember-forgote">
-                        <label>
-                            <input type="checkbox" id="checkbox">I agree to the turms & condition
-                        </label>
-                    </div>
-                    <center>
-                        <button type="submit" class="btn" id="signupBtn">Sign Up</button>
-                    </center>
-                    <div class="login-register">
-                        <p>Already have an account? <a href="../index.html" class="login-link" id="signinBtn">Sign In</a></p>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-    <script src="script1.js"></script>
+      </div>
+      <script src="script1.js"></script>
 </body>
 </html>
